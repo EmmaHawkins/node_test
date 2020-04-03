@@ -53,7 +53,6 @@ describe("app", function() {
     testApp.post('3')
     testApp.delete(1)
     testApp.delete(2)
-    console.log(testApp.messages)
     expect(testApp.get(3).id).to.equal(3)
   });
 

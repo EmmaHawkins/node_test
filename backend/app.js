@@ -29,13 +29,13 @@ class MessageApp {
 
   //Update
   update(id, update){
-    let index = this.messages.findIndex(message => message,id === id)
+    let index = this.messages.findIndex(message => message.id === id)
     this.messages[index].content = update
   }
 
   //Delete
   delete(id){
-    this.messages = this.messages.filter(mesage => mesage.id != id)
+    this.messages = this.messages.filter(message => message.id != id)
     return this.messages
   }
 }
